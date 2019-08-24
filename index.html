@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>UMBC Acronym Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <style>
+            .col-sm-4 a {
+                color: black;
+            }
+        
+            .col-sm-4 a:hover {
+                color: black;
+                text-decoration: none;
+            }
+        
+            /* Sticky footer */
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+        
+            body {
+                margin-bottom: 60px;
+            }
+        
+            .footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #f5f5f5;
+            }
+
+            input {
+                border-width: 0px;
+                border: none;
+                box-shadow: none;
+                outline: none;
+                border-bottom: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <h1 class="text-center">UMBC Acronym Generator</h1>
+
+            <div class="alert alert-warning" role="alert">
+                <b>Instructions:</b>
+                <ol>
+                    <li>
+                        Click the lock to toggle the lock states.
+                    </li>
+                    <li>
+                        Locking means that you don't the word to change. Unlocked allows the word to be changed.
+                    </li>
+                    <li>
+                        Click the "Change All Unlocked" button to change it to a random word from the dictionary.
+                    </li>
+                </ol>
+
+                <p class="mb-0">
+                    You can also click a word to manually edit it. Just hit enter or click on the page to exit the editing mode.
+                </p>
+            </div>
+
+            <h2>
+                <i class="fas fa-lock"></i>
+                <span id="U" class="noselect">University</span>
+            </h2>
+
+            <h2>of</h2>
+            
+            <h2>
+                <i class="fas fa-lock"></i>
+                <span id="M" class="noselect">Maryland</span>
+            </h2>
+
+            <h2>
+                <i class="fas fa-lock"></i>
+                <span id="B" class="noselect">Baltimore</span>
+            </h2>
+
+            <h2>
+                <i class="fas fa-lock"></i>
+                <span id="C" class="noselect">County</span>
+            </h2>
+
+            <button id="unlockAll" class="btn btn-primary mb-2">Unlock All</button>
+            <button id="lockAll" class="btn btn-warning text-white mb-2">Lock All</button><br>
+            <button id="changeAll" class="btn btn-success">Change All Unlocked</button>
+        </div>
+
+        <!-- Sticky footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Created by <a href="https://twitter.com/reesdraminski" target="_blank">Rees
+                        Draminski</a>.
+                    View code <a href="https://github.com/reesdraminski/umbc-generator" target="_blank">here</a>.</span>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
